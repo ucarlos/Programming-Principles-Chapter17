@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.15)
+project(Chapter17)
+
+set(CMAKE_CXX_STANDARD 17)
+
+#add_executable(Chapter17 main.cpp)
+add_executable(Chapter17_Test Chapter17_Try.cc)
+add_executable(Chapter17_Drill Chapter17_Drill.cc)
+add_executable(Chapter17_Test01 Chapter17_Test01.cpp)
+add_executable(Problem17_03 Problem17_03.cc)
+add_executable(Problem17_04 Problem17_04.cc)
+add_executable(Problem17_05 Problem17_05.cc)
+add_executable(Problem17_06_PLEASE_DONT_RUN_THIS_BEFORE_READING_THE_SOURCE_CODE Problem17_06.cc)
+add_executable(Problem17_11 Problem17_11.cc)
+add_executable(Problem17_13 Problem17_13.cc)
