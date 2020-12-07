@@ -13,7 +13,7 @@ class Link{
 public:
     string value;
     Link(const string &v, Link *p = nullptr, Link *s = nullptr)
-	: value{v}, prev{p}, succ{s} { }
+		: value{v}, prev{p}, succ{s} { }
 
     Link* insert(Link *n);
     Link* add(Link *n);
@@ -63,10 +63,10 @@ Link* Link::add(Link *n){
 void print_all(Link *p){
     cout << "(";
     while (p){
-	cout << p->value;
+		cout << p->value;
         p = p->next();
         if (p)
-	    cout << ",";
+			cout << ",";
     }
     cout << ")\n";
 

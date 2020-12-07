@@ -18,7 +18,7 @@ char *stdup_c_style(const char *str){
     char *temp = (char *)calloc(strlen(str), sizeof(char));
     
     for (int i = 0; i < strlen(str); i++)
-	temp[i] = str[i];
+		temp[i] = str[i];
 
     return temp;
 
@@ -28,7 +28,7 @@ char* stdup(const char *str){
     int str_size = strlen(str);
     char *temp = new char[str_size];
     for (int i = 0; i < str_size; i++)
-	temp[i] = str[i];
+		temp[i] = str[i];
 
     return temp;
 

@@ -22,8 +22,8 @@ int main(void){
     vector<long double *>list;
     
     for (int i = 0; i < 100; i++){
-	list.push_back(new long double);
-	cout << "Address of Pointer: " << list[i] << endl;
+		list.push_back(new long double);
+		cout << "Address of Pointer: " << list[i] << endl;
     }
     
     return 0;

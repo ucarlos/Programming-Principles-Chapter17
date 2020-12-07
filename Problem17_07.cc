@@ -19,9 +19,9 @@ int main(void){
     char temp;
     int i = 0;
     cout << "Please type in some character. To exit, press \"!\""
-	 << endl;
+		 << endl;
     while ((cin >> temp) && (temp != '!')){
-	str[i++] = temp;
+		str[i++] = temp;
     }
     cout << str << endl;
     delete[] str;

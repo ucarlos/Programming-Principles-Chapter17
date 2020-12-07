@@ -21,9 +21,9 @@ using namespace std;
 void to_lower(char *s){
     char temp;
     for (char *p = s; *p; p++){
-	if ('A' <= *p && *p <= 'Z'){
-	    *p += ('a' - 'A');
-	}
+		if ('A' <= *p && *p <= 'Z'){
+			*p += ('a' - 'A');
+		}
 	
     }
 }

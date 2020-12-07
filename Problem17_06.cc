@@ -20,12 +20,12 @@ int main(void){
     unsigned long long temp = VAL * sizeof(long double);
     cout << setprecision(4);
     for (unsigned long long i = 1; ; i++){ // Yeah no shit it's a endless loop compiler
-	list = new long double[VAL];
-	unsigned long long ll = i * temp;
-	long double ld = (ll / powl(2, 20));
-	cout << "Allocated " << ll << " bytes ("
-	     << ld << " MB)"
-	     << endl;
+		list = new long double[VAL];
+		unsigned long long ll = i * temp;
+		long double ld = (ll / powl(2, 20));
+		cout << "Allocated " << ll << " bytes ("
+			 << ld << " MB)"
+			 << endl;
     }
 
 }

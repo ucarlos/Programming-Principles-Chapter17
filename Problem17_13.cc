@@ -25,8 +25,8 @@ public:
     string vehicle;
     string weapon;
     God(const string &n, const string myth, const string veh, const string weap
-            , God *p = nullptr, God *s = nullptr)
-	: name{n}, mythology{myth}, vehicle{veh}, weapon{weap}, prev{p}, succ{s} {}
+		, God *p = nullptr, God *s = nullptr)
+		: name{n}, mythology{myth}, vehicle{veh}, weapon{weap}, prev{p}, succ{s} {}
 
     God* insert(God *n);
     God* add(God *n);
@@ -56,9 +56,9 @@ God* God::add_ordered(God *n){
     // First, compare the god names. if name < n.name or it eaches the end, then break
     
     while (temp->succ != nullptr){
-	if (n->name <= temp->name)
-	    break;
-	else temp = temp->succ;
+		if (n->name <= temp->name)
+			break;
+		else temp = temp->succ;
     }
 
     // If temp->succ is really null, then just return the add.
@@ -97,19 +97,19 @@ God* God::add(God *n){
 
 void print_all(God *p){
     if (!p){
-	cout << "Warning: Empty List." << endl;
-	return;
+		cout << "Warning: Empty List." << endl;
+		return;
     }
 
     // Otherwise
     while (p){
-	cout << "Deity Name: " << p->name
-	     << "\tMythology: " << p->mythology
-	     << "\tVehicle: " << p->vehicle
-	     << "\tWeapon: " << p->weapon
-	     << endl;
+		cout << "Deity Name: " << p->name
+			 << "\tMythology: " << p->mythology
+			 << "\tVehicle: " << p->vehicle
+			 << "\tWeapon: " << p->weapon
+			 << endl;
 
-	p = p->next();
+		p = p->next();
 
     }
 
